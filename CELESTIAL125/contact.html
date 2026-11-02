@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CELESTIAL125 | 天都科技有限公司 | 客製化系統與IT解決方案</title>
+	<link rel="stylesheet" href="./style/font.css">
+	<link rel="stylesheet" href="./style/model.css">
+	<link rel="stylesheet" href="./style/navbar.css">
+	<link rel="stylesheet" href="./style/banner.css">
+	<link rel="shortcut icon" href="CELESTIAL125.ico">
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="main-container">
+			<nav id="navbar" class="navbar">
+				<!-- js帶入 -->
+			</nav>
+
+			<div class="systems-container">
+				<div class="banner-container">
+					<div class="banner-content">
+						<h1 class=banner-title style="font-size:1.5rem">聯絡我們</h1>
+						<p class="banner-description" style="font-size:0.85rem">
+							隨時傾聽您的聲音，提供量身定制的專業諮詢與技術支援。無論您是初創企業尋求數位突破，或成熟品牌期待技術升級，我們的專家團隊將以豐富經驗與創新思維，為您規劃最適切的發展藍圖，共創數位成功。
+						</p>
+						<a class="banner-button" href="contact.html">了解更多</a>
+					</div>
+					<div class="banner-image">
+						<img src="./images/contactBanner.jpg" alt="banner">
+					</div>
+				</div>
+
+				<div class="contact-container" id="formSend">
+					<div class="form-card">
+						<div class="contact-container">
+							<div class="contact-form-wrapper">
+								<div class="form-header">
+									<h1>聯絡我們</h1>
+									<p class="form-subtitle">讓我們了解你的需求</p>
+								</div>
+								<form id="contactForm">
+									<div class="form-section"><label class="section-label">稱謂 <span
+												class="required">*</span></label>
+										<div class="title-options">
+											<label class="title-option selected">
+												<input type="radio" name="gender" value="先生" checked>
+												<span>先生</span>
+											</label>
+											<label class="title-option">
+												<input type="radio" name="gender" value="女士">
+												<span>女士</span>
+											</label>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group">
+											<label class="section-label">
+												名字 <span class="required">*</span>
+											</label>
+											<input type="text" name="firstName" class="form-input" placeholder="請輸入名字" required>
+										</div>
+										<div class="form-group">
+											<label class="section-label">
+												姓氏 <span class="required">*</span>
+											</label>
+											<input type="text" name="lastName" class="form-input " placeholder="請輸入姓氏" required>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group">
+											<label class="section-label">
+												電郵地址 <span class="required">*</span>
+											</label>
+											<input type="email" name="email" class="form-input" placeholder="請輸入電郵地址" required>
+										</div>
+										<div class="form-group">
+											<label class="section-label">
+												電話號碼 <span class="required">*</span>
+											</label>
+											<div class="phone-group">
+												<select class="country-code" name="country">
+													<option value="+852">+852</option>
+													<option value="+86">+86</option>
+													<option value="+1">+1</option>
+													<option value="+81">+81</option>
+													<option value="+82">+82</option>
+													<option value="+65">+65</option>
+													<option value="+60">+60</option>
+													<option value="+886">+886</option>
+												</select>
+												<input type="tel" name="phone" class="form-input phone-input" placeholder="請輸入電話號碼" required>
+											</div>
+										</div>
+									</div>
+									<div class="form-section">
+										<label class="section-label">公司名稱</label>
+										<input type="text" name="company" class="form-input" placeholder="請輸入公司名稱">
+									</div>
+									<div class="form-section">
+										<label class="section-label">
+											服務項目 <span class="required">*</span>
+										</label>
+										<div class="services-row">
+											<div class="service-option">
+												<input type="checkbox" name="services[]" value="網頁開發">
+												<span>網頁開發</span>
+											</div>
+											<div class="service-option">
+												<input type="checkbox" name="services[]" value="系統開發">
+												<span>系統開發</span>
+											</div>
+											<div class="service-option">
+												<input type="checkbox" name="services[]" value="程序開發">
+												<span>程序開發</span>
+											</div>
+											<div class="service-option">
+												<input type="checkbox" name="services[]" value="SEM&SEO">
+												<span>SEM&amp;SEO</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-section">
+										<label class="section-label">
+											留言 <span class="required">*</span>
+										</label>
+										<textarea name="message" class="form-textarea" placeholder="請輸入留言" autocomplete="off" autocorrect="off" rows="5" required></textarea>
+									</div>
+									<button type="submit" class="submit-button">提交</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="company-info-section">
+						<div class="company-info-header text-center">
+							<h3>公司資料</h3>
+						</div>
+						<div class="company-cards">
+							<div class="company-card text-center">
+								<h4>臺北市南港區南港路三段9號15樓</h4>
+								<p><i class="fas fa-envelope"></i> <a href="mailto:service@celestial125.com"
+										class="email-link">service@celestial125.com</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="contact-container" style="display: none;" id="thankSend">
+					<div class="form-card">
+						<div class="contact-container">
+							<div class="contact-form-wrapper">
+								<div class="form-header">
+									<h1>聯絡我們</h1>
+									<p class="form-subtitle">讓我們了解你的需求</p>
+								</div>
+								<div class="success-message-container"
+									data-gtm-vis-first-on-screen219995473_8="16540283"
+									data-gtm-vis-recent-on-screen219995473_8="16547039"
+									data-gtm-vis-total-visible-time219995473_8="100"
+									data-gtm-vis-has-fired219995473_8="1">
+									<h2>謝謝您的查詢！</h2>
+									<p>我們已收到您的訊息，將會盡快回覆您。</p><button class="submit-button" id="removeFrom">提交另一份表單</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="company-info-section">
+						<div class="company-info-header text-center">
+							<h3>公司資料</h3>
+						</div>
+						<div class="company-cards">
+							<div class="company-card text-center">
+								<h4>CELESTIAL URBAN TECHNOLOGY LIMITED</h4>
+								<p><i class="fas fa-phone"></i> (852) 94429080</p>
+								<p><i class="fas fa-envelope"></i><a href="mailto:info@zenithsoft.org"
+										class="email-link">info@zenithsoft.org</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a class="quotation-button" href="contact.html">獲取報價</a>
+
+			<footer class="footer">
+				<div class="copyright">
+					©2025 CELESTIAL URBAN TECHNOLOGY
+				</div>
+			</footer>
+		</div>
+	</div>
+
+
+	<script src="./js/navbar.js"></script>
+	<script>
+		var pricing_tabs = document.querySelectorAll("#pricing_tabs button");
+		var scale_plans = document.querySelector("#scale_plans");
+		var industry_plans = document.querySelector("#industry_plans");
+		for (let i = 0; i < pricing_tabs.length; i++) {
+			const element = pricing_tabs[i];
+			element.onclick = function () {
+				if (i == 0) {
+					pricing_tabs[0].classList.add("active");
+					pricing_tabs[1].classList.remove("active");
+					scale_plans.style.display = "block";
+					industry_plans.style.display = "none";
+				} else {
+					pricing_tabs[1].classList.add("active");
+					pricing_tabs[0].classList.remove("active");
+					scale_plans.style.display = "none";
+					industry_plans.style.display = "block";
+				}
+			}
+		}
+
+		// 稱謂選擇切換
+		const radios = document.querySelectorAll('input[name="gender"]');
+		function updateSelected() {
+			radios.forEach(radio => {
+				const label = radio.closest('.title-option');
+				label.classList.toggle('selected', radio.checked);
+			});
+		}
+		updateSelected();
+		// 監聽切換
+		radios.forEach(radio => {
+			radio.addEventListener('change', updateSelected);
+		});
+
+		// 服務項目至少勾選一項
+		const form = document.querySelector('#contactForm');
+		form.addEventListener("submit", async function (e) {
+			e.preventDefault(); // 阻止跳轉
+			const checked = document.querySelectorAll('input[name="services[]"]:checked');
+			if (checked.length == 0) {
+				alert("請至少選擇一項服務項目");
+				return;
+			}
+
+			const formData = new FormData(form);
+			fetch('../send.php', { method: 'POST', body: formData});
+			form.reset();
+			document.querySelector('#formSend').style.display = "none";
+			document.querySelector('#thankSend').style.display = "";		
+		});
+
+		document.querySelector('#removeFrom').addEventListener('click',()=>{
+			form.reset();
+			document.querySelector('#formSend').style.display = "";
+			document.querySelector('#thankSend').style.display = "none";
+		})
+	</script>
+</body>
+
+</html>
